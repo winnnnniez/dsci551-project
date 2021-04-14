@@ -1,0 +1,61 @@
+:root {
+  --primary-color: #8ACC60;
+}
+
+body {
+  background: white;
+  margin: 0;
+  font-family: "Avenir";
+}
+
+.header {
+  background: var(--primary-color);
+  padding: 0.6em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #375126;
+  font-size: 1.6em;
+}
+.header text {
+  text-align: center;
+  margin-left: 15em;
+}
+
+.navbar {
+  text-align: left;
+  text-decoration: none;
+  margin-left: 1em;
+  padding: 1em;
+  padding-top: 5em;
+  width: 10em;
+  height: 40em;
+  border-right: 1px dashed #d6dbd6;
+  border-bottom: 1px dashed #d6dbd6;
+  position: unset;
+}
+.navbar .filters {
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 20px;
+}
+.navbar .filter-btns {
+  display: inline-block;
+  list-style: none;
+}
+.navbar .filter-btn {
+  margin-bottom: 8px;
+  background-color: #E4EEDE;
+  border: 0;
+  padding: 6px;
+  height: 2.2em;
+  margin-left: -5px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.result-display {
+  margin-top: -45em;
+  margin-left: 15em;
+}
+
+/*# sourceMappingURL=restaurants.css.map */

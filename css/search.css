@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #8ACC60;
+}
+
+body {
+  background: white;
+  margin: 0;
+  font-family: "Avenir";
+}
+
+.header {
+  background: var(--primary-color);
+  padding: 0.6em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #375126;
+  font-size: 1.6em;
+}
+
+.search {
+  text-align: center;
+}
+.search .title {
+  margin-top: 5em;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #5A853E;
+  letter-spacing: 0.3em;
+}
+.search .search-area {
+  display: block;
+  margin-top: 2em;
+}
+.search .search-area .search-box {
+  border: 1.5px solid #8e928d;
+  border-radius: 10px;
+  padding: 10px;
+  height: 20px;
+  width: 600px;
+}
+.search .search-area .search-icon {
+  max-width: 1.8em;
+  position: relative;
+  bottom: -0.7em;
+  left: -3em;
+}
+.search .search-area .search-btn {
+  text-decoration: none;
+}
+.search .search-area .search-btn button {
+  margin: 3em 3em;
+  color: var(--primary-color);
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #8e928d;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  text-decoration: none;
+}
+footer p {
+  margin-right: 2em;
+}
+
+/*# sourceMappingURL=search.css.map */
