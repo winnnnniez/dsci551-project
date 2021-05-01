@@ -1,0 +1,9 @@
+pandas==1.2.1
+Flask==1.1.2
+Flask-Cors==3.0.10
+dnspython==2.0.0
+pymongo==3.11.3
+requests==2.25.1
+pyspark==3.1.1
+findspark==1.4.2
+APScheduler==3.6.3
