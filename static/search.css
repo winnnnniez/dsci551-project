@@ -16,7 +16,10 @@ body {
   color: #375126;
   font-size: 1.6em;
 }
-
+.header .home-page {
+  text-decoration: none;
+  color: #375126;
+}
 .search {
   text-align: center;
 }
@@ -30,6 +33,7 @@ body {
 }
 .search .search-area {
   display: block;
+  margin-left: 1em;
   margin-top: 2em;
 }
 .search .search-area .search-box {
@@ -47,13 +51,15 @@ body {
 }
 .search .search-area .search-btn {
   text-decoration: none;
+  padding: 3em;
 }
-.search .search-area .search-btn button {
-  margin: 3em 3em;
+.search .search-area .search-btn input {
+  margin: 2em 3em;
   color: var(--primary-color);
   background-color: white;
   border: none;
   border-bottom: 1px solid #8e928d;
+  font-size: 1em;
 }
 
 footer {
@@ -66,5 +72,3 @@ footer {
 footer p {
   margin-right: 2em;
 }
-
-/*# sourceMappingURL=search.css.map */

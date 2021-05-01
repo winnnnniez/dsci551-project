@@ -14,48 +14,62 @@ body {
   font-size: 1.6em;
   font-weight: bold;
   color: #375126;
-  text-decoration: none;
 }
+
+.header .home-page {
+  text-decoration: none;
+  color: #375126;
+}
+
 .header .result-title {
   text-align: center;
   margin-top: -1.43em;
-  margin-left: 2em;
 }
 
 .navbar {
+  float: left;
   text-align: left;
   text-decoration: none;
   margin-left: 1em;
   padding: 1em;
-  padding-top: 5em;
-  width: 10em;
-  height: 40em;
+  width: 16em;
+  height: 90%;
   border-right: 1px dashed #d6dbd6;
-  border-bottom: 1px dashed #d6dbd6;
-  position: unset;
+  border-top: 1px dashed #d6dbd6;
+  position: fixed;
+  overflow: scroll;
 }
 .navbar .filters {
-  margin-top: 1em;
-  font-size: 20px;
+  margin: 1em -1.7em;
+  font-size: 22px;
+  display: block;
 }
 .navbar .filter-btns {
   display: inline-block;
-  list-style: none;
+  margin-left: 1.8em;
 }
 .navbar .filter-btn {
-  margin-bottom: 8px;
+  display: block;
   background-color: #E4EEDE;
   border: 0;
+  margin: -6px -1.2em;
   padding: 6px;
   height: 2.2em;
-  margin-left: -5px;
+  width: auto;
   border-radius: 4px;
   font-size: 15px;
 }
-
+.navbar .filter-submit {
+  border-style: solid;
+  border-color: #d6dbd6;
+  height: 2em;
+  background-color: white;
+  font-size: 1.2em;
+  margin: 1em 8px;
+}
 .result-display {
-  margin-top: -44em;
-  margin-left: 20em;
+  margin-top: 5em;
+  margin-left: 25em;
 }
 .result-display .result-box {
   border: 2px solid #d6dbd6;
@@ -71,11 +85,35 @@ body {
   font-weight: 500;
   border-bottom: 2px solid var(--primary-color);
 }
-.result-display .result-box h1 .cuisine {
+.result-display .result-box .cuisine {
+  font-size: 1.1em;
+  margin-left: 14em;
+  margin-top: -12.5em;
+  font-weight: 500;
+  color: #3f453f;
+}
+.result-display .result-box .rating {
+  font-size: 1.1em;
   text-decoration: none;
-  font-size: 0.6em;
-  color: grey;
-  margin-left: 2em;
+  margin-left: 14em;
+  font-weight: 500;
+  color: #3f453f;
+}
+.result-display .result-box .price {
+  font-size: 1.1em;
+  text-decoration: none;
+  margin-left: 14em;
+  font-weight: 500;
+  color: #3f453f;
+}
+.result-display .result-box .address {
+  font-size: 1.1em;
+  margin-left: 14em;
+  font-weight: 300;
+  color: #576357;
+  display: inline-block;
+  width: 200px;
+  word-wrap: break-word;
 }
 .result-display .result-box .res-img {
   object-fit: cover;
@@ -87,11 +125,9 @@ body {
   border-radius: 10px;
 }
 .result-display .result-box .res-map {
-  margin-left: 29em;
-  margin-top: 6px;
+  margin-left: 29.5em;
+  margin-top: 8px;
   width: 320px;
   height: 270px;
   border-radius: 8px;
 }
-
-/*# sourceMappingURL=restaurants.css.map */

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>search</title>
+  <link rel="stylesheet" href="../static/restaurants.css">
+</head>
+<body>
+
+<!-- ================================================================================ -->
+
+<div class="header">
+  <a class="home-page" href="/">DSCI551</a>
+  <div class="result-title">Restaurants near {{loc}}</div>
+</div>
+
+<!-- ================================================================================ -->
+  <section>
+    <div class="navbar">
+
+      <form class="filter-btns" action="/filtered-restaurants" method="POST">
+
+        <input class="filter-submit" type="submit" value="Filter &amp; Search">
+
+        <div class="filters">Ratings: </div>
+        {% for item in ratings %}
+        <button class="filter-btn">
+          <input type="checkbox" value="{{item[0]}}" name="side-checkbox-1"> {{item[0]}} ({{item[1]}})
+        </button>
+        <br>
+        {% endfor %}
+
+        <div class="filters">Prices: </div>
+        <form class="filter-btns" action="/filtered-restaurants" method="POST">
+          {% for item in prices %}
+          <button class="filter-btn">
+            <input type="checkbox" value="{{item[0]}}" name="side-checkbox-2"> {{item[0]}} ({{item[1]}})
+          </button>
+          <br>
+          {% endfor %}
+
+        <div class="filters">Categories: </div>
+        <form class="filter-btns" action="/filtered-restaurants" method="POST">
+          {% for item in categories[:10] %}
+          <button class="filter-btn">
+            <input type="checkbox" value="{{item[0]}}" name="side-checkbox-3"> {{item[0]}} ({{item[1]}})
+          </button>
+          <br>
+          {% endfor %}
+
+      </form>
+
+    </div>
+  </section>
+
+<!-- ================================================================================ -->
+
+  <section>
+    <div class="result-display">
+      <p>{{msg}}</p>
+      {% for item in res_list[:30] %}
+      <div class="result-box">
+        <h1>{{res_list.index(item)+1}}. {{item['name']}}</h1>
+        <img class="res-img" src={{item["img_url"]}} alt={{item['name']}}>
+        <iframe class="res-map"
+          width="400"
+          height="200"
+          style="border:0"
+          loading="lazy"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAx0klBrweoSLp6eSUu1K2hWMtlLkiLTHw&q={{item['map_src']}}"
+          alt="Map not available">
+        </iframe>
+        <p class="cuisine">{{item['categories']}}</p>
+        <p class="rating">Rating: {{item['rating']}}</p>
+        <p class="price">Price: {{item['price']}}</p>
+        <div class="address">{{item['address']}}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+<!-- ================================================================================ -->
+
+</body>
+</html>

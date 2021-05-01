@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>search</title>
+  <link rel="stylesheet" href="../static/posts.css">
+</head>
+<body>
+
+<!-- ================================================================================ -->
+
+<div class="header">
+  <a class="home-page" href="/">DSCI551</a>
+  <div class="result-title">Instagram posts near {{loc}}</div>
+</div>
+
+<!-- ================================================================================ -->
+
+  <section>
+    <div class="navbar">
+      <form action="/filtered-posts" method="POST">
+        <p class="sort-text">Sort by:</p>
+      <!-- <div class="filters">Sort by: -->
+      <br>
+      <input class="filter-btn" type="submit" name="Submit" value="Most Likes"/>
+      <br>
+      <input class="filter-btn" type="submit" name="Submit" value="Most Recent"/>
+    </div>
+  </section>
+
+<!-- ================================================================================ -->
+
+  <section>
+    <!-- <div class="result-display"> -->
+    <p class="message">{{msg}}</p>
+    <div class="result-display-1">
+
+      {% for item in post_list_1 %}
+      <div class="result-box">
+        <img class="post-img" src={{item['img_url']}} alt="{{item['slug']}}">
+        <img class="heart-img" src="../static/heart.png" alt="like">
+        <span class="num-likes">{{item['likes']}}</span>
+        <p class="date">{{item['time']}}</p>
+      </div>
+      {% endfor %}
+
+    </div>
+
+    <div class="result-display-2">
+
+      {% for item in post_list_2 %}
+      <div class="result-box">
+        <img class="post-img" src={{item['img_url']}} alt="{{item['slug']}}">
+        <img class="heart-img" src="../static/heart.png" alt="like">
+        <span class="num-likes">{{item['likes']}}</span>
+        <p class="date">{{item['time']}}</p>
+      </div>
+      {% endfor %}
+
+    </div>
+
+    <div class="result-display-3">
+
+      {% for item in post_list_3 %}
+      <div class="result-box">
+        <img class="post-img" src={{item['img_url']}} alt="{{item['slug']}}">
+        <img class="heart-img" src="../static/heart.png" alt="like">
+        <span class="num-likes">{{item['likes']}}</span>
+        <p class="date">{{item['time']}}</p>
+      </div>
+      {% endfor %}
+
+    </div>
+
+    <!-- </div> -->
+  </section>
+
+<!-- ================================================================================ -->
+
+<footer class="update-info">
+  <p>{{ft}}</p>
+</footer>
+
+<!-- ================================================================================ -->
+
+</body>
+</html>

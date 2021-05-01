@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>search</title>
+  <link rel="stylesheet" href="../static/search.css">
+</head>
+<body>
+
+<!-- ================================================================================ -->
+
+<div class="header">
+  <a class="home-page" href="/">DSCI551</a>
+</div>
+
+<!-- ================================================================================ -->
+
+  <section class="search">
+    <div>
+      <p class="title">Instagram &amp; Yelp</p>
+      <h1>Fun Things to Do in LA</h1>
+
+      <div class="search-area">
+        <form action="/results" method="POST">
+        <!-- <form action="/verify" method="POST"> -->
+          <label for="search"></label>
+          <input class="search-box" type="text" name="location" id="search" placeholder="Enter a location">
+          <img class="search-icon" src="../static/search.png" alt="search icon">
+          <br>
+          <a class="search-btn">
+            <input type="submit" name="Submit" value="Restaurants"/>
+            <input type="submit" name="Submit" value="Instagram Posts"/>
+          </a>
+      </div>
+
+    </div>
+  </section>
+
+<!-- ================================================================================ -->
+
+  <footer>
+    <p class="team-info">Team members: Xiuwen Zhang, Siqi Zheng</p>
+  </footer>
+
+<!-- ================================================================================ -->
+
+</body>
+</html>

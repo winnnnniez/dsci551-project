@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #8ACC60;
+}
+
+body {
+  background: white;
+  margin: 0;
+  font-family: "Avenir";
+}
+
+.header {
+  background: var(--primary-color);
+  padding: 0.6em;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #375126;
+}
+
+.header .home-page {
+  text-decoration: none;
+  color: #375126;
+}
+
+.header .result-title {
+  text-align: center;
+  margin-top: -1.43em;
+}
+
+.navbar {
+  float: left;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 1em;
+  padding: 1em;
+  width: 10em;
+  height: 10em;
+  border: 1px dashed #d6dbd6;
+  position: fixed;
+}
+.navbar .sort-text {
+  margin-left: 1em;
+}
+.navbar .filter-btn {
+  margin: -5px 1.8em;
+  text-decoration: none;
+  display: block;
+  background-color: #E4EEDE;
+  border: 0;
+  padding: 6px;
+  height: 2.2em;
+  width: auto;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.message {
+  text-align: center;
+  margin-left: -50em;
+}
+.result-display-1 {
+  float: left;
+  /* margin-top: 2em; */
+  margin-bottom: 2em;
+  margin-left: 15em;
+}
+.result-display-2 {
+  float: left;
+  /* margin-top: 2em; */
+  margin-bottom: 2em;
+  margin-left: -2em;
+}
+.result-display-3 {
+  float: left;
+  /* margin-top: 2em; */
+  margin-bottom: 2em;
+  margin-left: -2em;
+}
+.result-box {
+  border: 2px solid #d6dbd6;
+  height: 18em;
+  width: 14.5em;
+  border-radius: 3px;
+  margin: 2em 4em;
+}
+.result-box .heart-img {
+  width: 25px;
+  height: auto;
+  margin-top: 15.5em;
+  margin-left: 1.5em;
+}
+.result-box .post-img {
+  object-fit: cover;
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  margin: 6px;
+  border-radius: 10px;
+}
+.result-box .num-likes {
+  font-size: 1.2em;
+  margin-left: 8px;
+  color: #375126;
+  /* font-family: "lao mn"; */
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  text-decoration: none;
+}
+footer p {
+  margin-right: 2em;
+}
