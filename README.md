@@ -8,7 +8,7 @@ Required python
 
 Install packages in requirements.txt
 ```bash
-pip(3) install requirements.txt
+pip(3) install -r requirements.txt
 ```
 
 Run the script
