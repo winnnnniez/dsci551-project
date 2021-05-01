@@ -2,8 +2,10 @@
 
 Search restaurants / instagram posts based on locations
 
-## notes
+## Notes
+All API keys in the uploaded scripts are not usable. If you need to run the scripts, please ask us through our emails. Thanks :) 
 
+## Steps
 Install packages in requirements.txt
 ```bash
 pip(3) install -r requirements.txt
