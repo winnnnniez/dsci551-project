@@ -4,8 +4,6 @@ Search restaurants / instagram posts based on locations
 
 ## notes
 
-Required python
-
 Install packages in requirements.txt
 ```bash
 pip(3) install -r requirements.txt
